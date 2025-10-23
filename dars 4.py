@@ -1,11 +1,11 @@
 import math
 
-  #Begin.5. Kubning yon tomoni a berilgan. Uning hajmini 
+  #.5. Kubning yon tomoni a berilgan. Uning hajmini 
 a = int(input("Kubning yon tomonini yozing: a ="))
 print("Kubning hajmi(V=a**3): V=", a**3)
 print("Kubning to'la sirti(S=6*a**2):S=", 6*(a**2))
 
-# Begin6. Parallelepipedning tomonlari a, b, c berilgan. Uning hajmi V = a * b * c va to'la sirti S = 2 * (a * b + b * c + a * c) aniqlansin.
+# 6. Parallelepipedning tomonlari a, b, c berilgan. Uning hajmi V = a * b * c va to'la sirti S = 2 * (a * b + b * c + a * c) aniqlansin.
 a = 4
 b = 5
 c = 6
@@ -30,7 +30,7 @@ b = 25
 orta_arifmetik = (a + b) / 2
 print(f"Sonlarning o'rta arifmetigi = {orta_arifmetik}")
 
-# Begin9. Ikkita manfiy bo'lmagan son a va b berilgan. Ularning o'rta geometrigi aniqlansin. sqrt(a * b)
+# 9. Ikkita manfiy bo'lmagan son a va b berilgan. Ularning o'rta geometrigi aniqlansin. sqrt(a * b)
 import math
 
 a = 4
@@ -38,7 +38,7 @@ b = 9
 orta_geometrik = math.sqrt(a * b)
 print(f"Sonlarning o'rta geometrigi = {orta_geometrik}")
 
-#Begin10. Nolga teng bo'lmagan ikkita son berilgan. Ularning yig'indisi, ko'paytmasini va har birining kvadratini aniqlansin.
+#10. Nolga teng bo'lmagan ikkita son berilgan. Ularning yig'indisi, ko'paytmasini va har birining kvadratini aniqlansin.
 a = 7
 b = 3
 yigindi = a + b
