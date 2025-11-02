@@ -18,31 +18,71 @@
 # print(o_familyalarfamilyalar)
 
 
+# Davlatlar ro'yxatini yaratamiz
+davlatlar = ["Ozbekiston", "AQSH", "Rossiya", "Xitoy", "Turkiya"]
 
-davlatlar = ['O‘zbekiston', 'Qozog‘iston', 'Rossiya', 'AQSh', 'Xitoy']
+# Ro'yxatni ekranga chiqaramiz
+print(davlatlar)
 
-print("Davlatlar ro'yxati:", davlatlar)
+# Ro'yxat uzunligini (nechta element borligini) chiqaramiz
 print("Ro'yxat uzunligi:", len(davlatlar))
+
+# Davlatlarni alifbo tartibida (A dan Z gacha) tartiblab chiqaramiz
 print("Tartiblangan ro'yxat:", sorted(davlatlar))
-print("Teskari tartiblangan ro'yxat:", sorted(davlatlar,reverse=True))
+
+# Davlatlarni alifboga teskari tartibda (Z dan A gacha) chiqaramiz
+print("Teskari tartiblangan ro'yxat:", sorted(davlatlar, reverse=True))
+
+# Asl ro'yxatni (tartiblanmagan holatda) yana chiqaramiz
 print("Asl ro'yxat:", davlatlar)
+
+# Ro'yxatni butunlay teskari tartibda aylantiramiz (birinchi element oxiriga, oxirgisi boshiga)
 davlatlar.reverse()
+print("Ortidan boshlab ro'yxat:", davlatlar)
 
-print("Ortidan boshlab ro'yxat:", davlatlar).sort()
+# Davlatlarni yana alifbo tartibida chiqaramiz (asl ro'yxatdan mustaqil)
+print("Alifbo bo'yicha tartiblangan ro'yxat:", sorted(davlatlar))
 
-print("Alifbo bo'yicha tartiblangan ro'yxat:", davlatlar)       
-davlatlar.sort(reverse=True)
-print("Alifboga teskari tartiblangan ro'yxat:", davlatlar) 
+# Davlatlarni alifboga teskari tartibda chiqaramiz
+print("Alifboga teskari tartibda ro'yxat:", sorted(davlatlar, reverse=True))
 
-juft_sonlar = list(range(120, 1201, 2)) 
-print("120 dan 1200 gacha bo'lgan juft sonlar ro'yxati:", juft_sonlar)
-print("Sonlar yig'indisi:", sum(juft_sonlar))
-print("Eng katta va eng kichik sonlar ayirmasi:", max(juft_sonlar) - min(juft_sonlar))
+
+# 120 dan 1200 gacha bo'lgan juft sonlar ro'yxatini hosil qilamiz
+# range(120, 1201, 2) -> 120 dan boshlaydi, 1200 gacha boradi, har safar 2 ga oshadi
+juft_sonlar = list(range(120, 1201, 2))
+print("Juft sonlar ro'yxati:", juft_sonlar)
+
+# Juft sonlar yig'indisini hisoblaymiz
+yigindi = sum(juft_sonlar)
+print("Sonlar yig'indisi:", yigindi)
+
+# Eng katta va eng kichik sonlarni topamiz
+eng_katta = max(juft_sonlar)
+eng_kichik = min(juft_sonlar)
+
+# Eng katta va eng kichik sonlar orasidagi farqni hisoblaymiz
+ayirma = eng_katta - eng_kichik
+print("Eng katta va eng kichik son o'rtasidagi ayirma:", ayirma)
+
+# Ro'yxatda nechta element borligini aniqlaymiz
 print("Elementlar soni:", len(juft_sonlar))
+
+# Ro'yxatning boshidagi 20 ta elementni chiqaramiz
 print("Ro'yxatning boshidan 20 ta qiymat:", juft_sonlar[:20])
-print("Ro'yxatning o'rtasidan 20 ta qiymat:", juft_sonlar[ (len(juft_sonlar)//2 - 10) : (len(juft_sonlar)//2 + 10) ])
+
+# Ro'yxatning o'rtasidan 20 ta elementni chiqaramiz
+# len(juft_sonlar)//2 -> ro'yxat markazidagi indeks
+# undan 10 ta oldin va 10 ta keyin elementlarni olamiz
+print("Ro'yxatning o'rtasidan 20 ta qiymat:", juft_sonlar[len(juft_sonlar)//2-10 : len(juft_sonlar)//2+10])
+
+# Ro'yxatning oxiridagi 20 ta elementni chiqaramiz
 print("Ro'yxatning oxiridan 20 ta qiymat:", juft_sonlar[-20:])
 
-taomlar = ['osh', 'shashlik', 'manti', 'lagman', 'somsa']
+# Taomlar ro'yxatini yaratamiz
+taomlar = ["osh", "shashlik", "manti", "lag'mon", "somsa"]
+
+# Taomlar ro'yxatini ekranga chiqaramiz
 print("Taomlar ro'yxati:", taomlar)
+
+
 
