@@ -4,3 +4,10 @@ for sayyora in sayyoralar:
     if sayyora == "Yer":
         break
 print("Dastur tugadi.")
+
+
+
+
+
+
+
