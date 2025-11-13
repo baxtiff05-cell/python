@@ -9,4 +9,3 @@ print("Dastur tugadi.")
 
 
 
-
